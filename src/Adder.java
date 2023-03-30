@@ -9,6 +9,8 @@ public class Adder extends Manipulator {
     @Override
     public void processData() throws IOException, ClassNotFoundException {
         ArrayList<Object> data = db.getObjects();
-        System.out.println((int)data.get(0) + (int)data.get(1));
+        int a = (int)data.get(0);
+        int b = (int)data.get(1);
+        System.out.printf("%d + %d = %d%n", a, b, a + b);
     }
 }
